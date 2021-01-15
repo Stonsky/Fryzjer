@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/compiler.xml
+/intellij-javadocs-4.0.1.xml
+/jarRepositories.xml
+/misc.xml
+/uiDesigner.xml
+/vcs.xml
+
+# Datasource local storage ignored files
+/../../../../../:\Pobrane\zadanie6g\zadanie6\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

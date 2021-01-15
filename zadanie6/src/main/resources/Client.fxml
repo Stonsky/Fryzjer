@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0"
+      prefWidth="310.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="fryzjer.client.Handler">
+    <ListView fx:id="ListofYourReservation" layoutX="22.0" layoutY="197.0" prefHeight="64.0" prefWidth="268.0"/>
+    <ListView fx:id="ListOfAllReservation" layoutX="17.0" layoutY="303.0" prefHeight="106.0" prefWidth="268.0">
+        <opaqueInsets>
+            <Insets/>
+        </opaqueInsets>
+    </ListView>
+    <DatePicker fx:id="date" editable="false" layoutX="22.0" layoutY="49.0" prefHeight="25.0" prefWidth="268.0"
+                promptText="Date"/>
+    <TextField fx:id="name" layoutX="21.0" layoutY="14.0" prefHeight="25.0" prefWidth="268.0" promptText="Name"/>
+    <ChoiceBox fx:id="hour" layoutX="22.0" layoutY="91.0" prefHeight="25.0" prefWidth="268.0"/>
+    <Button fx:id="ReserveButton" layoutX="98.0" layoutY="130.0" mnemonicParsing="false" onAction="#Reserve"
+            prefHeight="25.0" prefWidth="105.0" text="Zarezerwuj"/>
+    <Label fx:id="errorbox" layoutX="21.0" layoutY="155.0" prefHeight="17.0" prefWidth="259.0"/>
+    <Button fx:id="CancelButton" layoutX="94.0" layoutY="270.0" mnemonicParsing="false" onAction="#Cancel"
+            text="Cancel reservation"/>
+    <Label layoutX="22.0" layoutY="74.0" prefHeight="17.0" prefWidth="43.0" text="Hour:"/>
+    <Label layoutX="22.0" layoutY="172.0" text="Your reservation"/>
+</Pane>
